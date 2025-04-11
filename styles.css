@@ -84,6 +84,17 @@ body {
     border: 1px solid #ccc;
     font-size: 1rem;
   }
+
+  input:focus {
+    border-color: #143b9e;
+    box-shadow: 0 0 5px rgba(20, 59, 158, 0.5);
+    outline: none;
+  }
+
+  #password:invalid:not(:focus),
+  #confirm_password:invalid:not(:focus) {
+    border-color: red;
+  }
   
   button {
     margin-top: 1rem;
